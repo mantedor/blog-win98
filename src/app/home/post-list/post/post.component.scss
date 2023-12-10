@@ -1,0 +1,25 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+
+i{
+    font-weight: normal;
+    color: rgb(100, 100, 100);
+}
+
+.post{
+    display: flex;
+
+    align-items: center;
+
+    cursor: url('../../../../assets/mouse-hover.cur'), auto;
+}
+
+.title{
+    font-weight: bold;
+}
+
+.descriptor{
+    padding-left: 20px;
+}

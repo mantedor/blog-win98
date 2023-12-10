@@ -1,0 +1,21 @@
+.navbar-body{
+    display: flex;
+
+    justify-content: space-between;
+
+    height: 20px;
+
+    color: white;
+
+    background-image: linear-gradient(to right, #011184, #1a8bcc);
+}
+
+.title{
+    display: flex;
+
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+
+    padding: 3px;
+}
