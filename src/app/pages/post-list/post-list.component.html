@@ -1,0 +1,12 @@
+<div class="posts">
+    <span *ngFor="let post of posts">
+        <app-post 
+            id="{{post.id}}" 
+            title="{{post.title}}" 
+            publishDate="{{post.timestamp | date: 'medium'}}" 
+            desc="{{post.content}}">
+        </app-post>
+    </span>
+    <div class="page-select">
+    </div>
+</div>

@@ -1,0 +1,19 @@
+
+<div class="post">
+    
+    <a routerLink="/posts">
+        <div class="back-button bordered">
+            <img src="../../../../assets/exit.png"  style="padding-right: 5px"/>
+            <b>Back to Posts</b>
+        </div>
+    </a>
+    <br/>
+    <div class="post-content">
+        <div class="header">
+            <h2 class="title">{{currentPost.title}}</h2>
+            <h4 class="timestamp">({{currentPost.timestamp | date: "long"}})</h4>
+            <h4 *ngIf="currentPost.tags.length > 0">Tags: {{currentPost.tags.join(", ")}}</h4>
+        </div>
+        <div class="content" [innerHTML]="currentPost.content"></div>
+    </div>
+</div>

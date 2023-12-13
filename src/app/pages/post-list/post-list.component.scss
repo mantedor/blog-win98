@@ -1,0 +1,21 @@
+.posts{
+  padding: 10px;
+
+  border: 2px solid black;
+
+  overflow: auto;
+
+  max-height: 300px;
+
+  background-color: white;
+}
+
+.page-select{
+  display: flex;
+
+  justify-content: center;
+
+  span{
+    padding-right: 5px;
+  }
+}

@@ -4,6 +4,8 @@
 
     position: absolute;
 
+    font-family: sansserifwin98;
+
     left: 0;
     bottom:0;
 
@@ -15,21 +17,23 @@
 
     background-color: #c1c0c1;
 
+    .button-taskbar{
+        display: flex;
+    
+        align-items: center;
+        padding: 3px;
+        margin: 2px;
+    }
 }
 
-.time{
-    display:flex; 
-
-    align-items: center;
-
-    padding: 3px;
-    margin: 2px; 
-}
-
-.start{
+.left-section{
     display: flex;
-
+    
     align-items: center;
-    padding: 3px;
-    margin: 2px;
+
+    .current-selected{
+        width: 150px;
+
+        background-color: #eeeeef;
+    }
 }

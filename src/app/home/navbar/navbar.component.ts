@@ -42,6 +42,8 @@ export class NavbarComponent implements OnInit{
 
 
     document.addEventListener("mousemove", (e)=>{
+      e.preventDefault();
+
       if(!this.dragging){return}
 
       const posNavbar = this.navbar.getBoundingClientRect();
@@ -52,7 +54,7 @@ export class NavbarComponent implements OnInit{
 
       const distance: number = posYNav - posYMain;
 
-      this.updatePosition(e.clientX - this.offsetY, e.clientY - this.offsetY - distance)
+      this.updatePosition(e.clientX, e.clientY - this.offsetY - distance)
     })
     document.addEventListener("mouseup", ()=>{
       this.dragging = false;

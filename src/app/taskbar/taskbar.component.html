@@ -1,9 +1,15 @@
 <div class="taskbar">
-    <div class="start bordered">
-        <img src="../../assets/icons/start.png" style="padding-right: 5px">
-        Start
+    <div class="left-section">
+        <div class="button-taskbar bordered">
+            <img src="../../assets/icons/start.png" style="padding-right: 5px">
+            Start
+        </div>
+        <div class="button-taskbar current-selected inverse-bordered">
+            <img src="../../assets/icons/directoryexplorer.png" style="padding-right: 5px">
+            <span class="window-name">Blog</span>
+        </div>
     </div>
-    <div class="time bordered">
+    <div class="button-taskbar bordered">
         <img src="../../assets/icons/time.png" style="padding-right: 5px">
         {{currentDate | date: "shortTime"}}
     </div>

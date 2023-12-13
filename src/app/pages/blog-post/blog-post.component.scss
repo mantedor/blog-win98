@@ -1,0 +1,29 @@
+.post-content{
+    padding: 10px;
+    max-height: 300px;
+
+    border: 2px solid black;
+  
+    overflow: auto;
+  
+    background-color: white;
+
+    .header{
+        text-align: center;
+
+        .title{
+            margin-bottom: 0;
+        }
+        .timestamp{
+            font-weight: lighter;
+        }
+    }
+    }
+
+.back-button{
+    padding: 5px 0 5px 10px;
+
+    display: flex;
+
+    align-items: center;
+}
