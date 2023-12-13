@@ -12,7 +12,6 @@ export class NavbarComponent implements OnInit{
   private navbar: HTMLElement;
 
   private dragging: boolean = false;
-  private offsetX: number = 0;
   private offsetY: number = 0;
 
   constructor(navbar: ElementRef){
@@ -31,8 +30,7 @@ export class NavbarComponent implements OnInit{
     this.navbar.addEventListener("mousedown", e => {
       this.dragging = true;
 
-      const {left, top} = this.navbar.getBoundingClientRect();
-      this.offsetX = e.clientX - left;
+      const {top} = this.navbar.getBoundingClientRect();
       this.offsetY = e.clientY - top;
     })
     this.navbar.addEventListener("dblclick", ()=>{
