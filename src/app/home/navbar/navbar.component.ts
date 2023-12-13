@@ -12,7 +12,6 @@ export class NavbarComponent implements OnInit{
   private navbar: HTMLElement;
 
   private dragging: boolean = false;
-  private offsetY: number = 0;
 
   constructor(navbar: ElementRef){
     const navEl = navbar.nativeElement as HTMLElement;
@@ -29,9 +28,6 @@ export class NavbarComponent implements OnInit{
   ngOnInit(): void {
     this.navbar.addEventListener("mousedown", e => {
       this.dragging = true;
-
-      const {top} = this.navbar.getBoundingClientRect();
-      this.offsetY = e.clientY - top;
     })
     this.navbar.addEventListener("dblclick", ()=>{
       this.mainWindow.style.left = "50%";
@@ -52,7 +48,7 @@ export class NavbarComponent implements OnInit{
 
       const distance: number = posYNav - posYMain;
 
-      this.updatePosition(e.clientX, e.clientY - this.offsetY - distance)
+      this.updatePosition(e.clientX, e.clientY - distance)
     })
     document.addEventListener("mouseup", ()=>{
       this.dragging = false;
