@@ -1,0 +1,53 @@
+
+//win98 scrollbar
+//https://gist.github.com/Dakedres/0ccda599648833a1c2f65d3967aa131b
+
+*::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+    background: none;
+  }
+  
+*::-webkit-scrollbar-thumb, *::-webkit-scrollbar-button {
+    width: 16px;
+    height: 16px;
+    background: silver;
+    box-shadow: inset 1px 1px #dfdfdf, inset -1px -1px gray;
+    border: 1px solid;
+    border-color: silver #000 #000 silver;
+  }
+  
+*::-webkit-scrollbar-track {
+    image-rendering: optimizeSpeed;
+    image-rendering: pixelated;
+    image-rendering: optimize-contrast;
+    background-image: url("../assets/scrollbar/track.svg");
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: 2px;
+  }
+  
+*::-webkit-scrollbar-button {
+    background-repeat: no-repeat;
+    background-size: 16px;
+  }
+  
+*::-webkit-scrollbar-button:single-button:vertical:decrement {
+    background-image: url("../assets/scrollbar/decrement.svg");
+  }
+  
+*::-webkit-scrollbar-button:single-button:vertical:increment {
+    background-image: url("../assets/scrollbar/increment.svg");
+  }
+  
+*::-webkit-scrollbar-button:single-button:horizontal:decrement {
+    background-image: url("../assets/scrollbar/h-decrement.svg");
+  }
+  
+*::-webkit-scrollbar-button:single-button:horizontal:increment {
+    background-image: url("../assets/scrollbar/h-increment.svg");
+  }
+  
+*::-webkit-scrollbar-corner {
+    background: silver;
+  }
