@@ -24,6 +24,7 @@
         padding: 3px;
         margin: 2px;
     }
+
 }
 
 .left-section{
@@ -35,5 +36,11 @@
         width: 150px;
 
         background-color: #eeeeef;
+    }
+}
+
+@media (max-width: 400px){
+    .taskbar{
+        font-size: 90%;
     }
 }
