@@ -7,3 +7,21 @@ export interface Post{
 
     tags: string[];
 }
+
+export interface Pageable{
+    content: Post[];
+    
+    pageable: any;
+    
+    last: boolean;
+    totalPages: number;
+    totalElements: number;
+    size: number;
+    sort: any;
+    first: boolean;
+
+    number: number;
+    numberOfElements: number;
+
+    empty: boolean;
+}

@@ -15,7 +15,14 @@
 
   justify-content: center;
 
-  span{
-    padding-right: 5px;
+  .page-change{
+    padding: 3px;
+
+    color: gray;
+    text-decoration: none;
+  }
+
+  b{
+    color: black;
   }
 }

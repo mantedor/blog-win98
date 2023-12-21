@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from '../../../environments/environment';
 import { Observable } from 'rxjs';
-import { Post } from '../../models/post.interface';
+import { Post, Pageable } from '../../models/post.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -12,8 +12,8 @@ export class PostService {
 
   constructor(private http: HttpClient) { }
 
-  fetchBulkPosts(limit: number, offset: number): Observable<Post[]>{
-    return this.http.get<Post[]>(`${this.baseUrl}/posts?limit=${limit}&offset=${offset}`);
+  fetchBulkPosts(page: number): Observable<Pageable>{
+    return this.http.get<Pageable>(`${this.baseUrl}/posts?page=${page}&size=8`);
   }
   fetchPost(id: string): Observable<Post>{
     return this.http.get<Post>(`${this.baseUrl}/posts/${id}`);

@@ -8,5 +8,11 @@
         </app-post>
     </span>
     <div class="page-select">
+        <ng-container *ngFor="let n of pages">
+            <a class="page-change" routerLink="/posts/{{n}}">
+                <b *ngIf="n == currentPage + 1; else elseBlock">{{n}}</b>
+                <ng-template #elseBlock>{{n}}</ng-template>
+            </a>
+        </ng-container>
     </div>
 </div>
