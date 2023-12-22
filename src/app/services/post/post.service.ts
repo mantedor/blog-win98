@@ -12,7 +12,7 @@ export class PostService {
 
   constructor(private http: HttpClient) { }
 
-  fetchBulkPosts(page: number): Observable<Pageable>{
+  fetchPage(page: number): Observable<Pageable>{
     return this.http.get<Pageable>(`${this.baseUrl}/posts?page=${page}&size=8`);
   }
   fetchPost(id: string): Observable<Post>{

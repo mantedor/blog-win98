@@ -27,7 +27,7 @@ export class PostListComponent{
   constructor(private postService: PostService){}
 
   changePostsPage(n: number): void {
-    const postsObservable = this.postService.fetchBulkPosts(n);
+    const postsObservable = this.postService.fetchPage(n);
 
     postsObservable.subscribe(posts => {
       this.posts = posts.content;
