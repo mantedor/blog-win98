@@ -1,0 +1,25 @@
+a{
+    color: black;
+
+    text-decoration: none;
+}
+
+.continue{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 4px 20px 4px 20px;
+
+    width: 50px;
+    height: 15px;
+
+    background-color: #c0c0c0;
+
+    font-size: 80%;
+}
+
+.visited{
+    border: 1px dashed black;
+}

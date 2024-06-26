@@ -1,0 +1,17 @@
+*{
+    font-family: sansserifwin98;
+}
+
+.shortcuts-list{
+    display: flex;
+
+
+    app-shortcut{
+        margin: 3px;
+        padding: 5px;
+    }
+}
+
+.shortcut-selected{
+    outline: 1px dashed white
+}

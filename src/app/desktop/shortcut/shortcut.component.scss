@@ -1,0 +1,23 @@
+a{
+    text-decoration: none;
+}
+
+.shortcut{
+    display: flex;
+
+    flex-direction: column;
+    
+    .shortcut-icon{
+        padding: 3px;
+    }
+    .shortcut-name{
+        color: white;
+    }
+}
+
+@media(max-width:768px){
+    .shortcut{
+        width: 75%;
+        height: 75%;
+    }
+}

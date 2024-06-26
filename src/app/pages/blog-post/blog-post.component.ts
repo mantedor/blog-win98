@@ -3,11 +3,13 @@ import { PostService } from './../../services/post/post.service';
 import { Post } from './../../models/post.interface';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { ExitComponent } from '../../buttons/exit/exit.component';
+import { CommentComponent } from './comment/comment.component';
 
 @Component({
   selector: 'app-blog-post',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, ExitComponent, CommentComponent],
   templateUrl: './blog-post.component.html',
   styleUrl: './blog-post.component.scss'
 })
